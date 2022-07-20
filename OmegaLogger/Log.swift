@@ -7,19 +7,20 @@
 
 import Foundation
 
-enum LogType: String {
-  case info = "info"
+public enum LogType: String {
+  case info = "Info"
   case debug = "Debug"
-  case stackTrace = "Stack Trace"
+  case trace = "Trace"
   case error = "Error"
 }
 
-public class Log {
-  
-  var type: LogType
-  
-  init(type: LogType) {
-    self.type = type
-  }
-  
+public struct Log {
+  public let message: String
+  public let type: LogType
+  public let date: Date?
+  public let file: String?
+  public let line: Int?
+  public let column: Int?
+  public let function: String?
+  public let color: String?
 }
