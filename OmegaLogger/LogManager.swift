@@ -7,30 +7,36 @@
 
 import Foundation
 
-public typealias OmgLog = LogManager
+public typealias OmgLog = LoggerInterface
 
 public protocol LoggerInterface {
-  func info<T>(_ data: T)
-  func debug<T>(_ data: T)
-  func trace<T>(_ data: T)
-  func error<T>(_ data: T)
+  static func info<T>(_ data: T)
+  static func debug<T>(_ data: T)
+  static func trace<T>(_ data: T)
+  static func error<T>(_ data: T)
 }
 
-final public class LogManager: NSObject, LoggerInterface {
+final public class LogManager: LoggerInterface {
   
-  public func info<T>(_ data: T) {
+  // MARK: - shared instance
+  private static let shared: LoggerInterface = LogManager()
+  
+  // MARK: - Properties
+  
+  // MARK: - LoggerInterface static methods
+  public static func info<T>(_ data: T) {
     print(data)
   }
   
-  public func debug<T>(_ data: T) {
+  public static func debug<T>(_ data: T) {
     print(data)
   }
   
-  public func trace<T>(_ data: T) {
+  public static func trace<T>(_ data: T) {
     print(data)
   }
   
-  public func error<T>(_ data: T) {
+  public static func error<T>(_ data: T) {
     print(data)
   }
   

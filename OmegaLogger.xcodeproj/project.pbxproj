@@ -13,6 +13,8 @@
 		500815942881A7A9007A96CB /* OmegaLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 500815862881A7A9007A96CB /* OmegaLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		507EC08E288757E9003EB913 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507EC08D288757E9003EB913 /* Log.swift */; };
 		50EB212728821898003A07AE /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EB212628821898003A07AE /* LogManager.swift */; };
+		50FFA04F288D6482000672A4 /* LogFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FFA04E288D6482000672A4 /* LogFormatter.swift */; };
+		50FFA051288D6492000672A4 /* LogHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FFA050288D6492000672A4 /* LogHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,8 @@
 		500815922881A7A9007A96CB /* OmegaLoggerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmegaLoggerTests.swift; sourceTree = "<group>"; };
 		507EC08D288757E9003EB913 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		50EB212628821898003A07AE /* LogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogManager.swift; sourceTree = "<group>"; };
+		50FFA04E288D6482000672A4 /* LogFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogFormatter.swift; sourceTree = "<group>"; };
+		50FFA050288D6492000672A4 /* LogHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 			children = (
 				500815862881A7A9007A96CB /* OmegaLogger.h */,
 				50EB212628821898003A07AE /* LogManager.swift */,
+				50FFA04E288D6482000672A4 /* LogFormatter.swift */,
+				50FFA050288D6492000672A4 /* LogHandler.swift */,
 				507EC08D288757E9003EB913 /* Log.swift */,
 				500815872881A7A9007A96CB /* OmegaLogger.docc */,
 			);
@@ -201,8 +207,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				50EB212728821898003A07AE /* LogManager.swift in Sources */,
+				50FFA051288D6492000672A4 /* LogHandler.swift in Sources */,
 				500815882881A7A9007A96CB /* OmegaLogger.docc in Sources */,
 				507EC08E288757E9003EB913 /* Log.swift in Sources */,
+				50FFA04F288D6482000672A4 /* LogFormatter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
