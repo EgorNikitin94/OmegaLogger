@@ -7,11 +7,12 @@
 
 import Foundation
 
-enum HandlerType {
-  case condsole
-  case file
+public protocol LogHandlerInterface {
+  func write(_ log: String)
 }
 
-protocol LogHandlerInterface {
-  func write(_ log: Log)
+public class ConsoleHandler: LogHandlerInterface {
+  public func write(_ log: String) {
+    print(log)
+  }
 }
